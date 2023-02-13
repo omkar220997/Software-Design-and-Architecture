@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "rgKVk7Qd8JaKDxs4qj6AWoRktH6yvHU7+wofRDjyCDY=",
+  "Source": "KlingelnbergMachinesInformation.Api",
+  "BasePath": "_content/KlingelnbergMachinesInformation.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "KlingelnbergMachinesInformation.Api\\wwwroot",
+      "Source": "KlingelnbergMachinesInformation.Api",
+      "ContentRoot": "C:\\Users\\kada_omk\\Desktop\\KIPL Machines Project\\KlingelnbergMachinesInformation\\KlingelnbergMachinesInformation.Api\\wwwroot\\",
+      "BasePath": "_content/KlingelnbergMachinesInformation.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\kada_omk\\Desktop\\KIPL Machines Project\\KlingelnbergMachinesInformation\\KlingelnbergMachinesInformation.Api\\wwwroot\\UIStyle.css",
+      "SourceId": "KlingelnbergMachinesInformation.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kada_omk\\Desktop\\KIPL Machines Project\\KlingelnbergMachinesInformation\\KlingelnbergMachinesInformation.Api\\wwwroot\\",
+      "BasePath": "_content/KlingelnbergMachinesInformation.Api",
+      "RelativePath": "UIStyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UIStyle.css"
+    }
+  ]
+}

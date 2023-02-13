@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SoftwareDesignAndArchitecture.API</name>
+    </assembly>
+    <members>
+        <member name="M:SoftwareDesignAndArchitecture.API.Controllers.MachineDataController.GetAllMachineData">
+            <summary>
+            Get all machines data.
+            </summary>
+            <returns>All machines data with asset name and series number of that asset</returns>
+        </member>
+        <member name="M:SoftwareDesignAndArchitecture.API.Controllers.MachineDataController.GetAllMachineTypeOnUsedAsset(System.String)">
+            <summary>
+            Get all machine data on which given asset is used.
+            </summary>
+            <param name="assetName">Enter Asset Name here.</param>
+            <returns>All machine data for respective asset</returns>
+        </member>
+        <member name="M:SoftwareDesignAndArchitecture.API.Controllers.MachineDataController.GetAssetForMachineType(System.String)">
+            <summary>
+            Get all asset names for given machine.
+            </summary>
+            <param name="machineType">Enter Machine Name here.</param>
+            <returns>All asset data used by given machine</returns>
+        </member>
+        <member name="M:SoftwareDesignAndArchitecture.API.Controllers.MachineDataController.GetMachineOfLatestAssets">
+            <summary>
+            Get machine data whihch are using latest version of all assets.
+            </summary>
+            <returns>Machine used latest version of all assets</returns>
+        </member>
+        <member name="M:SoftwareDesignAndArchitecture.API.Controllers.MachineDataController.PostDataToDb">
+            <summary>
+            Upload file data to database.
+            </summary>
+            <returns>Upload the data in database</returns>
+        </member>
+        <member name="M:SoftwareDesignAndArchitecture.API.Controllers.MachineDataController.DeleteAllDataFromDb">
+            <summary>
+            Delete All Data from database
+            </summary>
+            <returns>All data will be delete</returns>
+        </member>
+        <member name="T:SoftwareDesignAndArchitecture.API.Entity.Assets">
+            <summary>
+            Machines data with Machine name, Asset name and series number of asset.
+            </summary>
+        </member>
+        <member name="P:SoftwareDesignAndArchitecture.API.Entity.Assets.MachineName">
+            <summary>
+            Machine Type
+            </summary>
+        </member>
+        <member name="P:SoftwareDesignAndArchitecture.API.Entity.Assets.AssetName">
+            <summary>
+            Asset name
+            </summary>
+        </member>
+        <member name="P:SoftwareDesignAndArchitecture.API.Entity.Assets.SeriesNumberOfAsset">
+            <summary>
+            Series number of asset
+            </summary>
+        </member>
+    </members>
+</doc>

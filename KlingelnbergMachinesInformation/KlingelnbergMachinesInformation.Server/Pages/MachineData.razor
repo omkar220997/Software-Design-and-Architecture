@@ -1,0 +1,42 @@
+﻿@page "/machinedata"
+@inherits MachineDataBase
+<PageTitle>MachineDataFromDatabase</PageTitle>
+<h3>Machine Data</h3>
+
+<div class="input-group mb-3" style="width:800px">
+    <button type="button" class="btn btn-primary" @onclick="OnButtonClick1">All Machines</button>
+    <button type="button" class="btn btn-primary" @onclick="OnButtonClick2" style="margin-left:30px">Latest Version Machine</button>
+</div>
+
+<div class="input-group mb-3" style="width:800px">
+    <input type="text" class="form-control" placeholder="asset-name" aria-describedby="basic-addon2" @bind="AssetName" />
+    <button type="button" class="btn btn-primary" @onclick="OnButtonClick3" style="margin-left:50px">Get Machine on Used Asset</button>
+</div>
+<div class="input-group mb-3" style="width:800px">
+    <input type="text" class="form-control" placeholder="machine-type" aria-describedby="basic-addon3" @bind="MachineType" />
+    <button type="button" class="btn btn-primary" @onclick="OnButtonClick4" style="margin-left:50px">Get Asset on Used Machine</button>
+</div>
+@if (Asset is not null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Machine Type</th>
+                <th scope="col">Asset Name</th>
+                <th scope="col">Asset Version</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var asset in Asset)
+            {
+                <tr>
+                    <td>@asset.MachineName</td>
+                    <td>@asset.AssetName</td>
+                    <td>@asset.SeriesNumberOfAsset</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
